@@ -1,0 +1,23 @@
+{
+  "name": "@geiserman/js-package-template",
+  "version": "1.0.1",
+  "description": "JS package template",
+  "scripts": {
+    "lint": "eslint ./",
+    "lint:fix": "eslint ./ --fix",
+    "publish:alpha": "git commit --allow-empty -m \"chore(): alpha\" && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geiserman/package-template.git"
+  },
+  "homepage": "https://github.com/geiserman/package-template#readme",
+  "dependencies": {
+    "@geiserman/js-linters": "^1.0.17",
+    "@geiserman/js-logger": "^1.0.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/@geiserman/js-linters/linters/eslintrc.js"
+  },
+  "prettier": "./node_modules/@geiserman/js-linters/linters/prettier.config.js"
+}
