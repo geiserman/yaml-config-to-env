@@ -1,1 +1,5 @@
-console.log('Hello, World!');
+const configExports = require('./src/initialize-config');
+
+module.exports = {
+    ...configExports,
+};
